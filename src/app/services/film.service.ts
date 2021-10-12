@@ -2,7 +2,6 @@ import { EventEmitter, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Film } from '../models/Film';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import {Subject} from 'rxjs'; 
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -51,4 +50,6 @@ export class FilmService {
       this.filmsUrl, newFilm, httpOptions
     )
   }
+
+  
 }

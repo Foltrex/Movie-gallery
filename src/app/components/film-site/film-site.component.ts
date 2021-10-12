@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
 import { Film } from 'src/app/models/Film';
+import { SiteService } from 'src/app/services/site.service';
 @Component({
   selector: 'app-film-site',
   templateUrl: './film-site.component.html',
@@ -7,19 +8,13 @@ import { Film } from 'src/app/models/Film';
 })
 export class FilmSiteComponent implements OnInit {
   film!: Film;
-  constructor() { }
+  constructor(private filmService: SiteService) { }
 
   ngOnInit(): void {
-
-  }
-  
-  onGotoSiteFilm(film_: Film) {
-    this.film = film_;
-    if (this.film == null) {
-      console.log('null!!!');
-    } else {
-      console.log(this.film);
-    }
+    this.filmService.filmE$.subscribe((film) => {
+      console.log(film);
+      this.film = film;
+    });
   }
 
 }

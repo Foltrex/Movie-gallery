@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { Film } from 'src/app/models/Film';
+import { SiteService } from 'src/app/services/site.service';
 @Component({
   selector: 'app-film-item',
   templateUrl: './film-item.component.html',
@@ -11,13 +12,13 @@ export class FilmItemComponent implements OnInit {
 
   @Output() onDeleteFilm: EventEmitter<Film> = new EventEmitter();
   @Output() onGotoSiteFilm: EventEmitter<Film> = new EventEmitter();
-  constructor() { }
+  constructor(private filmService: SiteService) { }
 
   ngOnInit(): void {
   }
 
   onGotoSite(film: Film) {
-    this.onGotoSiteFilm.emit(film);
+    this.filmService.changeFilmE(film);
   }
 
   onDelete(film: Film): void {
