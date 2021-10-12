@@ -1,0 +1,23 @@
+<div class="rectangle">
+    <app-add-film></app-add-film>
+    <button class="mode" (click) = "changeMode()">List/Cards</button>
+    <div *ngIf="mode">
+        <div class="list">
+            <app-film-item
+            *ngFor="let film of films"
+            [film]="film"
+            (onDeleteFilm)="onDeleteFilm($event)" >
+            </app-film-item>
+        </div>
+    </div>
+    <div *ngIf="!mode">
+        <div class=cards>
+            <app-film-item
+            *ngFor="let film of films"
+            [film]="film"
+            (onDeleteFilm)="onDeleteFilm($event)" >
+            </app-film-item>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,31 @@
+.rectangle {
+    border: groove 20 px #634f36; /* Параметры рамки */
+    background: #202020; /* Цвет фона */
+    font-family: "Courier New", Courier, monospace; /* Шрифт текста */
+    height: auto;
+    margin: 30% 13.5% 15%; /* Отступы вокруг */
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 31%);
+    margin: 10vh 5%;
+    grid-gap: 2vw;
+}
+
+.list {
+    padding: 2vh;
+    margin: 10vh 5%;
+}
+
+.mode {
+    float: right;
+    margin: -12vh 7vw auto auto;
+
+    color: white;
+    background-color: rgb(14, 172, 184);
+    flex-flow: row;
+    padding: 2vh 3vw 2vh 3vw;
+    font-size: 22px;
+    font: bold;
+}

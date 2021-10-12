@@ -1,0 +1,15 @@
+/* app-film-item {
+     display: none; 
+} */
+
+.rectangle {
+    border: groove 20 px #634f36; /* Параметры рамки */
+    background: #202020; /* Цвет фона */
+    font-family: "Courier New", Courier, monospace; /* Шрифт текста */
+    height: 150vh;
+    margin: 30% 13.5% 15%; /* Отступы вокруг */
+}
+
+p {
+    color: white;
+}

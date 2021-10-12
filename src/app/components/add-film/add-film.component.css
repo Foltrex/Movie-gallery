@@ -1,0 +1,41 @@
+.form {
+    display: flex;
+    width: 55%;
+    flex-direction: column;
+    margin: 5vh 5%;
+    border: 1px solid rgb(184, 53, 53); /* Толщина рамки в пикселах, цвет линии */
+    background-color: rgb(51, 50, 50);
+    padding: 35px; /* Расстояние от текста до рамки */
+    font-size: 23px;
+    font-style:italic;
+    font-weight: 1000;
+    color: white;
+}
+
+
+.tit {
+    width: 94%;
+    padding: 1vh;
+}
+label {
+    width: 40%;
+    text-align: left;
+    color: #fff;
+}
+
+.form-control {
+    width: 100%;
+    padding: 1vh;
+}
+
+.btn {
+    margin: 3vh 0% 0vh 0vw;
+    padding: 2vh;
+
+    color: black;
+    background-color: white;
+    flex-flow: row;
+    font-size: 22px;
+    font: 1000;
+    width: 35%;
+}

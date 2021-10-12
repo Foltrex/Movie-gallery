@@ -1,0 +1,28 @@
+.error {
+    background-color:#202020;
+    top: 0;
+    left: 0;
+    height: 60vh;
+    color: rgb(202, 192, 192);
+    /* padding: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 20;
+    margin: 0; */
+}
+.content {
+    margin: 50vh auto auto 25vw
+    
+}
+.Ups {
+    /* margin: 50vh auto auto 35vw; */
+    font-size: 45pt;
+}
+
+.pnf {
+    /* margin: 3vh auto auto 35vw; */
+    font-size: 35pt;
+}

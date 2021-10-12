@@ -1,0 +1,38 @@
+<form class="form" (ngSubmit)="onSubmit()">
+    <h1>
+        Add new film
+    </h1>
+    <div class="form-group">
+        <label>Title</label>
+        <input class="tit" type="text" [(ngModel)]="title" placeholder="Add Title..." name="title"/>  
+    </div>
+    <div class="form-group">
+        <label>Year </label>
+        <select class="form-control" name="year" [(ngModel)]="year">
+            <option *ngFor="let y of years" [value]="y">
+                {{y}}
+            </option>
+        </select>
+        <!-- <input type="text" [(ngModel)]="year" placeholder="Add Year..." name="year"/> -->
+    </div>
+    <div class="form-group">
+        <label>Genre</label>
+        <select class="form-control" name="genre" [(ngModel)]="genre">
+            <option *ngFor="let gen of genres" [value]="gen">
+                {{gen}}
+            </option>
+        </select>
+        <!-- <input type="text" [(ngModel)]="genre" placeholder="Add Genre..." name="genre"/> -->
+    </div>
+    <div class="form-group">
+        <label>Grade</label>
+        <select class="form-control" name="grade" [(ngModel)]="grade">
+            <option *ngFor="let gr of grades" [value]="gr">
+                {{gr}}
+            </option>
+        </select>
+        <!-- <input type="text" [(ngModel)]="grade" placeholder="Add Grade..." name="grade"/> -->
+    </div>
+    
+    <input type="submit" value="Submit" class="btn" />
+</form>
