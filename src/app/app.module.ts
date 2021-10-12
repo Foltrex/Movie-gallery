@@ -11,7 +11,6 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { DataService } from './data.service';
-import { ChanelsComponent } from './components/chanels/chanels.component';
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
 import { FilmItemComponent } from './components/film-item/film-item.component';
@@ -26,7 +25,6 @@ import { AddFilmComponent } from './components/add-film/add-film.component'
     HeaderComponent,
     FooterComponent,
     FilmsComponent,
-    ChanelsComponent,
     AboutComponent,
     HomeComponent,
     FilmItemComponent,
